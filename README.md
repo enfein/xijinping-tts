@@ -1,14 +1,15 @@
----
-title: 习近平语音合成器
-emoji: 😅🔫🐻
-colorFrom: green
-colorTo: blue
-sdk: streamlit
-sdk_version: 1.10.0
-app_file: app.py
-pinned: false
-license: mit
-python_version: 3.7
----
+## 习近平语音合成器
 
-Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
+本项目代码从 https://hub.docker.com/r/xijinping615/xi-jinping-tts 使用逆向工程获得。
+
+编译容器
+
+```shell
+docker build . -t <TAG>
+```
+
+运行容器
+
+```shell
+docker run --rm -it -p 8051:8051 <TAG>
+```
