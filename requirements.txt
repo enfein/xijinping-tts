@@ -4,7 +4,7 @@ numpy == 1.19.0
 pypinyin == 0.39.0
 PyYAML == 5.4.1
 scipy == 1.4.1
-torch == 1.7.0+cpu
+torch == 1.13.1
 unidecode == 1.1.1
 streamlit == 1.10.0
 altair < 5
