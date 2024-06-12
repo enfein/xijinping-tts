@@ -1,6 +1,6 @@
 --find-links https://download.pytorch.org/whl/torch_stable.html
 inflect == 4.1.0
-numpy == 1.19.0
+numpy == 1.22.0
 pypinyin == 0.39.0
 PyYAML == 5.4.1
 scipy == 1.4.1
