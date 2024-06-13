@@ -1,4 +1,4 @@
-FROM python:3.7-slim-buster as builder
+FROM python:3.10-slim-bookworm as builder
 
 WORKDIR /app
 
@@ -13,7 +13,7 @@ RUN rm -rf .git && \
     cat parts_* > 600000.pth.tar && \
     rm parts_*
 
-FROM python:3.7-slim-buster
+FROM python:3.10-slim-bookworm
 
 WORKDIR /app
 
