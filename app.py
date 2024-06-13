@@ -49,12 +49,12 @@ args = argparse.Namespace(
 )
 
 
-@st.experimental_singleton
+@st.cache_resource
 def get_device():
     return torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 
-@st.experimental_singleton
+@st.cache_resource
 def load_configs():
     preprocess_config = yaml.load(open(args.preprocess_config, "r"), Loader=yaml.FullLoader)
     model_config = yaml.load(open(args.model_config, "r"), Loader=yaml.FullLoader)
@@ -67,17 +67,17 @@ device = get_device()
 preprocess_config, model_config, train_config, configs = load_configs()
 
 
-@st.experimental_singleton
+@st.cache_resource
 def load_model():
     return get_model(args, configs, device, train=False)
 
 
-@st.experimental_singleton
+@st.cache_resource
 def load_vocoder():
     return get_vocoder(model_config, device)
 
 
-@st.experimental_singleton
+@st.cache_resource
 def read_lexicon(lex_path):
     lexicon = {}
     with open(lex_path) as f:
