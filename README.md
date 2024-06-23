@@ -1,6 +1,6 @@
 ## 习近平语音合成器
 
-本项目代码从 https://hub.docker.com/r/xijinping615/xi-jinping-tts 使用逆向工程获得，并且更新了 Python 和部分依赖库的版本。
+本项目代码从 https://hub.docker.com/r/xijinping615/xi-jinping-tts (已经 404) 使用逆向工程获得，并且更新了 Python 和部分依赖库的版本。
 
 编译容器
 
